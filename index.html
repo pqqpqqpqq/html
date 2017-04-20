@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.our .one_bu{
+			width: 100%;
+			height: 25px;
+			background-color: #fff;
+		}
+		.our .quan{
+			text-align: center;
+		}
+		.our .two_kuai{
+			width: 100%;
+			height: 54px;
+			background-color: #258ba1;
+			overflow: hidden;
+		}
+		.our .two_diyi{
+			float: left;
+			margin-left:292px;
+			margin-right: 665px;
+			margin:0 auto;
+			line-height: 54px;
+			color: #FFFFFF;
+		}
+		.our .two_diyi span{
+			float: right;
+			margin-left: 200px;
+			margin-right:550px;
+			line-height: 54px;
+			color: #FFFFFF;
+		}
+		.our .three_kuai{
+			width: 1520px;
+			height: 60px;
+			background-color: #FFFFFF;
+			overflow: hidden;
+		}
+		.our .three_kuai img{
+			float: left;
+			margin-left:274px;
+			margin-right: 240px;
+			margin-top: 10px;
+		}
+		.our .pp_shouye ul{
+			overflow: hidden;
+		}
+		.our .pp_shouye li{
+			float: left;
+			margin-left:16px;
+			margin-right:15px;
+			line-height: 60px;
+			list-style: none;
+		}
+		.our .pp_yanse{
+			width: 104px;
+			height: 40px;
+			background-color: #258ba1;
+			color: #FFFFFF;
+			line-height: 42px;
+			text-align: center;
+			padding: 10px 10px;
+		}
+		.our .box{
+			width: 990px;
+			height: 372px;
+			margin-left: 280px;
+			position: relative;
+			left: 0; top:0;
+			overflow: hidden;
+		}
+		.our .con_box{
+			position: relative;
+			left: 0; top:0;
+		}
+		.our .con_box div{
+			width: 990px;
+			height: 372px;
+			line-height: 300px;
+			font-size: 30px;
+			text-align: center;
+			color: #fff;
+			float: left;
+			}
+		.our .box ul{
+			overflow: hidden;
+			position: absolute;
+			left: 445px; 
+			bottom: 22px;
+			text-align: center;
+			}
+		.our .box ul li{
+			list-style: none;
+			width: 10px;
+			height: 10px;
+			line-height: 10px;
+			text-align: center;
+			border: 2px solid #FFFFFF;
+			float: left;
+			border-radius: 50%;
+			margin-right:29px ;
+			}
+		.our .box ul li.active{
+			background-color: #fff;
+			
+		}
+		.our .guanyu{
+			width: 980px;
+			height: 70px;
+			background-color: #eaeaea;
+			margin-left: 284px;
+		}
+		.our .women h1{
+			font-size: 20px;
+			margin-left: 444px;
+			color: #258ba1;
+			padding-top: 15px;
+		}
+		.our .women p{
+			margin-left: 456px;
+			font-size: 12px;
+		}
+		.our .diliu{
+			width: 980px;
+			height: 60px;
+			background-color: #f4f3f3;
+			margin-left: 284px;
+			
+		}
+		.our .gongshi{
+			font-size: 12px;
+			margin-left: 338px;
+		}
+		.our .jianjie{
+			color: #258ba1;
+			margin-right: 26px;
+			line-height: 60px;
+		}
+		.our .shipi{
+			margin-right: 26px;
+			line-height: 60px;
+		}
+		.our .ruoyu{
+			margin-right: 26px;
+			line-height: 60px;
+		}
+		.our .lianxi{
+			margin-right: 26px;
+			line-height: 60px;
+		}
+		.our .dabeiji{
+			width: 1520px;
+			height: 190px;
+			background-color: #FFFFFF;
+		}
+		.our .ziti{
+			margin-left: 320px;
+			padding-top: 62px;
+			font-size: 16px;
+		}
+		.our .ziti p{
+			line-height: 26px;
+		}
+		.our .landatu{
+			width: 1520px;
+			height: 648px;
+			background-color: #FFFFFF;
+		}
+		.our .lanpp{
+			margin-left: 310px;
+		}
+		.our .dijiu_kuai{
+			width: 100%;
+			height: 172px;
+			background-color: #0c7e96;
+			position: relative;
+			left: 0;
+			top: 0;
+		}
+		.our .dijiu_wo{
+			position: absolute;
+			left: 268px;
+		}
+		.our .dijiu_one ul{
+			overflow: hidden;
+		}
+		.our .dijiu_one li{
+			float: left;
+			margin-left: 60px;
+			list-style: none;
+			margin-top: 50px;
+			color: #FFFFFF;
+		}
+		.our .dijiu_wom{
+			position: absolute;
+			left: 268px;
+		}
+		.our .dijiu_two ul{
+			overflow: hidden;
+		}
+		.our .dijiu_two li{
+			float: left;
+			margin-left: 60px;
+			list-style: none;
+			margin-top: 20px;
+			color: #FFFFFF;
+		}
+		.our .dijiu_wome{
+			position: absolute;
+			left: 268px;
+		}
+		.our .dijiu_three ul{
+			overflow: hidden;
+		}
+		.our .dijiu_three li{
+			float: left;
+			margin-left: 60px;
+			list-style: none;
+			margin-top: 80px;
+			color: #FFFFFF;
+		}
+		.our .dijiu_women{
+			position: absolute;
+			left: 268px;
+		}
+		.our .dijiu_four ul{
+			overflow: hidden;
+		}
+		.our .dijiu_four li{
+			float: left;
+			margin-left: 60px;
+			list-style: none;
+			margin-top: 110px;
+			color: #FFFFFF;
+		}
+		.our .dijiu_womeng{
+			position: absolute;
+			left: 268px;
+		}
+		.our .dijiu_six ul{
+			overflow: hidden;
+		}
+		.our .dijiu_six li{
+			float: left;
+			margin-left: 60px;
+			list-style: none;
+			margin-top: 140px;
+			color: #FFFFFF;
+		}
+		.our .dabeiji_zhui{
+			position: absolute;
+			left: 972px;
+			margin-top: 20px;
+		}
+		.our .dabeiji_zhuihuo li{
+			list-style: none;
+			color: #FFFFFF;
+			margin-bottom: 6px;
+		}
+		.our .dabeiji_zhuihuo span{
+			font-size: 28px;
+		}
+		.our .lei{
+			width: 100%;
+			height: 10px;
+			background-color: #FFFFFF;
+		}
+		.our .zhui_huo{
+			width: 100%;
+			height: 56px;
+			background-color: #026b81;
+		}
+		.our .zhui_huo p{
+			margin-left: 350px;
+			color: #FFFFFF;
+			line-height: 56px;
+		}
+		.our .ba{
+			width: 100%;
+			height: 14px;
+			background-color: #FFFFFF;
+		}
+		</style>
+	<body>
+		<div class="our">
+			<!--头部-->
+		<div class="our one_bu"></div>
+			<!--第二块-->
+		<div class="our quan">
+		<div class="our two_kuai">
+			<div class="our two_diyi">
+				客服热线:400-888-8920
+				<span>中文&nbsp |&nbsp&nbspEnglish</span>
+			</div>
+		</div>
+		</div>
+			<!--第三块-->
+			<div class="our three_kuai">
+					<img src="img/pp.png"/>
+					<ul class="our pp_shouye">
+						<li>首页</li>
+						<li>我要理财</li>
+						<li>我要借款</li>
+						<li>新闻中心</li>
+						<li>成功案例</li>
+						<li><span class="our pp_yanse">关于我们</span></li>
+					</ul>
+				</div>
+				
+				<!--第四块--><!--选项卡-->
+			<div class="our box">
+			<div class="our con_box" style="width:2970px;">
+				<div style="background-image: url(img/000.png);"></div>
+				<div style="background-image: url(img/666.png);"></div>
+				<div style="background-image: url(img/jie.png);"></div>
+			</div>
+			<ul>
+				<li class="our active"></li>
+				<li></li>
+				<li></li>
+			</ul>
+			</div>	
+			<!--第五块-->
+			<div class="our guanyu">
+				<div class="our women">
+					<h1>关于我们</h1>
+					<p>about&nbspus</p>
+				</div>
+			</div>
+			<!--第六块-->
+			<div class="our diliu">
+				<div class="our gongshi">
+				  <span class="our jianjie">公司简介</span>
+				  <span class="our shipi">企业视频</span>
+				  <span class="our ruoyu">企业荣誉</span>
+				  <span class="our lianxi">联系我们</span>
+				</div>
+			</div>
+			<!--第七块-->
+			<div class="our dabeiji">
+				<div class="our ziti">
+					<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspppdshd以人民&nbsp&nbsp&nbsp(pkaajd)&nbsp&nbsp&nbsp会更加&nbsp&nbsp&nbsp(hsdhd)&nbsp&nbsp&nbsp为人民&nbsp&nbsp(dnhjs)&nbsp&nbsp为终止<br>
+					可官方及对方会议提纲发给的的、&nbsp电话、&nbsp回复速度的金山。ppdq扩大解发是放<br>
+					空间的v那些大好是的形势，&nbsp的发挥规划士大夫多大的，&nbsp士大夫发发士大夫公司<br>
+					第三方、&nbsp是的方法是十复古风格分。
+					</p>
+				</div>
+			</div>
+			<!--第八块-->
+			<div class="our landatu">
+				<div class="our lanpp">
+					<img src="img/ppmoney.png" />
+				</div>
+			</div>
+			<!--第九块-->
+			<div class="our dijiu_kuai">
+				<div class="our dijiu_wo">
+					<ul class="our dijiu_one">
+						<li>关于我们</li>
+						<li>企业视频</li>
+						<li>企业荣誉</li>
+					</ul>
+				</div>
+			<div class="our dijiu_wom">
+					<ul class="our dijiu_two">
+						<li>关于我们</li>
+						<li>企业视频</li>
+						<li>企业荣誉</li>
+					</ul>
+				</div>
+				<div class="our dijiu_wome">
+					<ul class="our dijiu_three">
+						<li>关于我们</li>
+						<li>企业视频</li>
+						<li>企业荣誉</li>
+					</ul>
+				</div>
+				<div class="our dijiu_women">
+					<ul class="our dijiu_four">
+						<li>关于我们</li>
+						<li>企业视频</li>
+						<li>企业荣誉</li>
+					</ul>
+				</div>
+				<div class="our dijiu_womeng">
+					<ul class="our dijiu_six">
+						<li>关于我们</li>
+						<li>企业视频</li>
+						<li>企业荣誉</li>
+					</ul>
+				</div>
+				<div class="our dabeiji_zhui">
+				<ul class="our dabeiji_zhuihuo">
+					<li>客服电话：(工作时间：9:30-18:00)</li>
+					<li><span>466-000-888</span></li>
+					<li>地址：广州打字哦感觉好怪</li>
+					<li>电话：88888888</li>
+					<li>传真：66666666</li>
+				</ul>
+				</div>
+			</div>
+			<!--第十块-->
+			<div class="our lei"></div>
+			<!--第十一块-->
+			<div class="our zhui_huo">
+				<p>
+					hfdighdfs-545447184&nbsp&nbsp&nbsp(jsidgsuhs)&nbsp&nbspugfengrgigrrgwes忽然覆盖uhg苏韩国服饰uhfus忽红人馆飞机我Iuhf
+				</p>
+			</div>
+			<!--第十二块-->
+			<div class="our ba"></div>
+		
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.7.2.js" ></script>
+<script>
+	$(function(){
+		$('.box ul li').on('mouseenter',function(){
+			$('.our .box ul li').removeClass('.our active');
+			$(this).addClass('.our active');
+			$('.con_box').stop().animate({left:-($(this).index())*990+'px'},300);
+		});
+	});
+</script>
+
